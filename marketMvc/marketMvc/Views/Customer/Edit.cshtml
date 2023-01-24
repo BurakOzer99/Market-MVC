@@ -1,0 +1,25 @@
+﻿@model marketMvc.Models.Customer
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Edit</h2>
+<div class="center-block">
+    <form method="post">
+        <label>Name</label>
+        <input type="text" name="Name" id="Name"  value="@Model.Name"/>
+        <br />
+        <label>Surname</label>
+        <input type="text" name="SurName" id="SurName" value="@Model.SurName" />
+        <br />
+        <label>Balance</label>
+        <input type="number" name="Balance" id="Balance"  value="@Model.Balance"/>
+        <br />
+        <input  type="hidden" name="Id" id="Id" value="@Model.Id"/>
+        <button>
+            Güncelle
+        </button>
+    </form>
+</div>
+
